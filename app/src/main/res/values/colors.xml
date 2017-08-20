@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#484848</color>
+
+    <color name="morningHeader">#F0EB97</color>
+    <color name="afternoonHeader">#CADAE9</color>
+    <color name="eveningHeader">#6A8197</color>
+
+    <color name="morningBg">#FFFEEA</color>
+    <color name="afternoonBg">#F5FAFF</color>
+    <color name="eveningBg">#C3CCD5</color>
+</resources>

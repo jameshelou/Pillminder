@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colour spinner options -->
+    <string-array name="colour_spinner_options">
+        <item>@string/colour_black</item>
+        <item>@string/colour_blue</item>
+        <item>@string/colour_darkblue</item>
+        <item>@string/colour_green</item>
+        <item>@string/colour_orange</item>
+        <item>@string/colour_pink</item>
+        <item>@string/colour_purple</item>
+        <item>@string/colour_red</item>
+        <item>@string/colour_yellow</item>
+    </string-array>
+
+    <!-- Time spinner options -->
+    <string-array name="time_spinner_options">
+        <item>@string/morning</item>
+        <item>@string/afternoon</item>
+        <item>@string/evening</item>
+    </string-array>
+</resources>

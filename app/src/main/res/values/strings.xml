@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Pillminder</string>
+    <string name="add_button">Add</string>
+    <string name="name_edit_text_hint">Medication name</string>
+    <string name="time_text_field">Time:</string>
+    <string name="name_text_field">Name:</string>
+    <string name="colour_text_field">Colour:</string>
+    <string name="save_menu_button">Save</string>
+    <string name="delete_menu_button">Delete All</string>
+
+    <string name="colour_black">Black</string>
+    <string name="colour_blue">Blue</string>
+    <string name="colour_darkblue">Dark blue</string>
+    <string name="colour_green">Green</string>
+    <string name="colour_orange">Orange</string>
+    <string name="colour_pink">Pink</string>
+    <string name="colour_purple">Purple</string>
+    <string name="colour_red">Red</string>
+    <string name="colour_yellow">Yellow</string>
+
+    <string name="morning">Morning</string>
+    <string name="afternoon">Afternoon</string>
+    <string name="evening">Evening</string>
+
+    <string name="editor_activity_add_pill_title">Add a pill reminder</string>
+    <string name="editor_activity_edit_pill_title">Edit pill reminder</string>
+
+    <string name="editor_activity_insert_pill_failed">Error creating new pill</string>
+    <string name="editor_activity_insert_pill_success">New pill reminder added!</string>
+    <string name="editor_activity_update_pill_failed">Updating pill failed!</string>
+    <string name="editor_activity_update_pill_success">Pill successfully updated</string>
+    <string name="editor_activity_delete_pill_failed">Error deleting this pill</string>
+    <string name="editor_activity_delete_pill_success">Pill has been deleted</string>
+
+
+    <string name="delete_dialog_question">Delete this pill?</string>
+    <string name="delete_dialog_positive">Delete</string>
+    <string name="delete_dialog_negative">Cancel</string>
+
+    <string name="notification_morning_append"> morning.</string>
+    <string name="notification_afternoon_append"> afternoon.</string>
+    <string name="notification_evening_append"> evening.</string>
+    <string name="notification_default_append"> very second.</string>
+
+    <string name="notification_message_part1">You have </string>
+    <string name="notification_message_part2_single"> pill to take this </string>
+    <string name="notification_message_part2_multiple"> pills to take this </string>
+
+</resources>
