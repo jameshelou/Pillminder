@@ -25,7 +25,7 @@ public class MidnightReceiver extends BroadcastReceiver {
         // image untaken state
         String selectionUntaken = PillEntry.COLUMN_COLOUR + "<? AND " +
                 PillEntry.COLUMN_TAKEN + "=?";
-        String[] selectionUntakenArgs = new String[]{ "100", String.valueOf(PillEntry.TAKEN_NO) };
+        String[] selectionUntakenArgs = new String[]{ "1000", String.valueOf(PillEntry.TAKEN_NO) };
         Cursor untakenImageCursor = context.getContentResolver().query(PillEntry.CONTENT_URI, null,
                 selectionUntaken, selectionUntakenArgs, null);
 
@@ -46,12 +46,12 @@ public class MidnightReceiver extends BroadcastReceiver {
 
         // Find all entries with TAKEN image
         String selection = PillEntry.COLUMN_COLOUR + ">=?";
-        String[] selectionArgs = new String[] { "100" };
+        String[] selectionArgs = new String[] { "1000" };
         Cursor takenImageCursor = context.getContentResolver().query(PillEntry.CONTENT_URI,
                 null,selection, selectionArgs, null);
 
         // For each TAKEN image row, set taken status to TAKEN_NO and set its image to untaken state
-        // (i.e current image id - 100)
+        // (i.e current image id - 1000)
         idColumnIndex = takenImageCursor.getColumnIndex(PillEntry._ID);
         int colourColumnIndex = takenImageCursor.getColumnIndex(PillEntry.COLUMN_COLOUR);
         while (takenImageCursor.moveToNext()) {
@@ -60,7 +60,7 @@ public class MidnightReceiver extends BroadcastReceiver {
 
             ContentValues takenNewValues = new ContentValues();
             takenNewValues.put(PillEntry.COLUMN_TAKEN, PillEntry.TAKEN_NO);
-            takenNewValues.put(PillEntry.COLUMN_COLOUR, colour-100); // revert to untaken state
+            takenNewValues.put(PillEntry.COLUMN_COLOUR, colour-1000); // revert to untaken state
 
             String takenWhere = PillEntry._ID + "=?";
             String[] takenArgs = new String[] { String.valueOf(id) };

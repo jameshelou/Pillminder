@@ -9,7 +9,8 @@
         android:layout_width="96dp"
         android:layout_height="96dp"
         android:layout_gravity="center"
-        tools:src="@drawable/pill_black"/>
+        android:layout_marginTop="8dp"
+        tools:src="@drawable/capsule_blue"/>
 
     <TextView
         android:id="@+id/pill_name_text_view"

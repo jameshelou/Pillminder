@@ -58,65 +58,98 @@ public final class PillContract {
         public static final int TAKEN_YES = 1;
 
         // Image id constants
-        public static final int COLOUR_BLACK = 1;
-        public static final int COLOUR_BLUE = 2;
-        public static final int COLOUR_DARKBLUE = 3;
-        public static final int COLOUR_GREEN = 4;
-        public static final int COLOUR_ORANGE = 5;
-        public static final int COLOUR_PINK = 6;
-        public static final int COLOUR_PURPLE = 7;
-        public static final int COLOUR_RED = 8;
-        public static final int COLOUR_YELLOW = 9;
-        public static final int COLOUR_BLACK_CHECKMARK = 101;
-        public static final int COLOUR_BLUE_CHECKMARK = 102;
-        public static final int COLOUR_DARKBLUE_CHECKMARK = 103;
-        public static final int COLOUR_GREEN_CHECKMARK = 104;
-        public static final int COLOUR_ORANGE_CHECKMARK = 105;
-        public static final int COLOUR_PINK_CHECKMARK = 106;
-        public static final int COLOUR_PURPLE_CHECKMARK = 107;
-        public static final int COLOUR_RED_CHECKMARK = 108;
-        public static final int COLOUR_YELLOW_CHECKMARK = 109;
+        // TABLET IMAGE IDS
+        public static final int IMAGE_TABLET_BLUE = 100;
+        public static final int IMAGE_TABLET_RED = 101;
+        public static final int IMAGE_TABLET_DARKBLUE = 102;
+        public static final int IMAGE_TABLET_GREEN = 103;
+        public static final int IMAGE_TABLET_ORANGE = 104;
+        public static final int IMAGE_TABLET_PINK = 105;
+        public static final int IMAGE_TABLET_YELLOW = 106;
 
+        public static final int IMAGE_TABLET_BLUE_CHECKED = 1100;
+        public static final int IMAGE_TABLET_RED_CHECKED = 1101;
+        public static final int IMAGE_TABLET_DARKBLUE_CHECKED = 1102;
+        public static final int IMAGE_TABLET_GREEN_CHECKED = 1103;
+        public static final int IMAGE_TABLET_ORANGE_CHECKED = 1104;
+        public static final int IMAGE_TABLET_PINK_CHECKED = 1105;
+        public static final int IMAGE_TABLET_YELLOW_CHECKED = 1106;
+
+        public static final int IMAGE_CAPSULE_BLUE = 300;
+        public static final int IMAGE_CAPSULE_RED = 301;
+        public static final int IMAGE_CAPSULE_DARKBLUE = 302;
+        public static final int IMAGE_CAPSULE_GREEN = 303;
+        public static final int IMAGE_CAPSULE_ORANGE = 304;
+        public static final int IMAGE_CAPSULE_PINK = 305;
+        public static final int IMAGE_CAPSULE_YELLOW = 306;
+
+        public static final int IMAGE_CAPSULE_BLUE_CHECKED = 1300;
+        public static final int IMAGE_CAPSULE_RED_CHECKED = 1301;
+        public static final int IMAGE_CAPSULE_DARKBLUE_CHECKED = 1302;
+        public static final int IMAGE_CAPSULE_GREEN_CHECKED = 1303;
+        public static final int IMAGE_CAPSULE_ORANGE_CHECKED = 1304;
+        public static final int IMAGE_CAPSULE_PINK_CHECKED = 1305;
+        public static final int IMAGE_CAPSULE_YELLOW_CHECKED = 1306;
 
         // Public helper method to point appropriate constant colour id to drawable resource
         public static int chooseImage(int colour_id) {
             switch (colour_id) {
-                case COLOUR_BLACK:
-                    return R.drawable.pill_black;
-                case COLOUR_BLUE:
-                    return R.drawable.pill_blue;
-                case COLOUR_DARKBLUE:
-                    return R.drawable.pill_darkblue;
-                case COLOUR_GREEN:
-                    return R.drawable.pill_green;
-                case COLOUR_ORANGE:
-                    return R.drawable.pill_orange;
-                case COLOUR_PINK:
-                    return R.drawable.pill_pink;
-                case COLOUR_PURPLE:
-                    return R.drawable.pill_purple;
-                case COLOUR_RED:
-                    return R.drawable.pill_red;
-                case COLOUR_YELLOW:
-                    return R.drawable.pill_yellow;
-                case COLOUR_BLACK_CHECKMARK:
-                    return R.drawable.pill_black_check;
-                case COLOUR_BLUE_CHECKMARK:
-                    return R.drawable.pill_blue_check;
-                case COLOUR_DARKBLUE_CHECKMARK:
-                    return R.drawable.pill_darkblue_check;
-                case COLOUR_GREEN_CHECKMARK:
-                    return R.drawable.pill_green_check;
-                case COLOUR_ORANGE_CHECKMARK:
-                    return R.drawable.pill_orange_check;
-                case COLOUR_PINK_CHECKMARK:
-                    return R.drawable.pill_pink_check;
-                case COLOUR_PURPLE_CHECKMARK:
-                    return R.drawable.pill_purple_check;
-                case COLOUR_RED_CHECKMARK:
-                    return R.drawable.pill_red_check;
-                case COLOUR_YELLOW_CHECKMARK:
-                    return R.drawable.pill_yellow_check;
+                case IMAGE_TABLET_BLUE:
+                    return R.drawable.tablet_blue;
+                case IMAGE_TABLET_RED:
+                    return R.drawable.tablet_red;
+                case IMAGE_TABLET_DARKBLUE:
+                    return R.drawable.tablet_darkblue;
+                case IMAGE_TABLET_GREEN:
+                    return R.drawable.tablet_green;
+                case IMAGE_TABLET_ORANGE:
+                    return R.drawable.tablet_orange;
+                case IMAGE_TABLET_PINK:
+                    return R.drawable.tablet_pink;
+                case IMAGE_TABLET_YELLOW:
+                    return R.drawable.tablet_yellow;
+                case IMAGE_TABLET_BLUE_CHECKED:
+                    return R.drawable.tablet_blue_check;
+                case IMAGE_TABLET_RED_CHECKED:
+                    return R.drawable.tablet_red_check;
+                case IMAGE_TABLET_DARKBLUE_CHECKED:
+                    return R.drawable.tablet_darkblue_check;
+                case IMAGE_TABLET_GREEN_CHECKED:
+                    return R.drawable.tablet_green_check;
+                case IMAGE_TABLET_ORANGE_CHECKED:
+                    return R.drawable.tablet_orange_check;
+                case IMAGE_TABLET_PINK_CHECKED:
+                    return R.drawable.tablet_pink_check;
+                case IMAGE_TABLET_YELLOW_CHECKED:
+                    return R.drawable.tablet_yellow_check;
+                case IMAGE_CAPSULE_BLUE:
+                    return R.drawable.capsule_blue;
+                case IMAGE_CAPSULE_RED:
+                    return R.drawable.capsule_red;
+                case IMAGE_CAPSULE_DARKBLUE:
+                    return R.drawable.capsule_darkblue;
+                case IMAGE_CAPSULE_GREEN:
+                    return R.drawable.capsule_green;
+                case IMAGE_CAPSULE_ORANGE:
+                    return R.drawable.capsule_orange;
+                case IMAGE_CAPSULE_PINK:
+                    return R.drawable.capsule_pink;
+                case IMAGE_CAPSULE_YELLOW:
+                    return R.drawable.capsule_yellow;
+                case IMAGE_CAPSULE_BLUE_CHECKED:
+                    return R.drawable.capsule_blue_check;
+                case IMAGE_CAPSULE_RED_CHECKED:
+                    return R.drawable.capsule_red_check;
+                case IMAGE_CAPSULE_DARKBLUE_CHECKED:
+                    return R.drawable.capsule_darkblue_check;
+                case IMAGE_CAPSULE_GREEN_CHECKED:
+                    return R.drawable.capsule_green_check;
+                case IMAGE_CAPSULE_ORANGE_CHECKED:
+                    return R.drawable.capsule_orange_check;
+                case IMAGE_CAPSULE_PINK_CHECKED:
+                    return R.drawable.capsule_pink;
+                case IMAGE_CAPSULE_YELLOW_CHECKED:
+                    return R.drawable.capsule_yellow_check;
                 default:
                     return 0;
             }

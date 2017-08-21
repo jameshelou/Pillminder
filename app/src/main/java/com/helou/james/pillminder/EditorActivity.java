@@ -25,6 +25,7 @@ import android.widget.Toast;
 
 import com.helou.james.pillminder.Data.PillContract.PillEntry;
 
+import static android.R.attr.actionMenuTextColor;
 import static android.R.attr.data;
 
 public class EditorActivity extends AppCompatActivity
@@ -129,51 +130,76 @@ public class EditorActivity extends AppCompatActivity
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String selection = (String) parent.getItemAtPosition(position);
                 if (!TextUtils.isEmpty(selection)) {
-                    if (selection.equals(getString(R.string.colour_black))) {
-                        mColour = PillEntry.COLOUR_BLACK;
+                    if (selection.equals(getString(R.string.tablet_blue))) {
+                        mColour = PillEntry.IMAGE_TABLET_BLUE;
                         mColourImageView.setImageResource(
-                                PillEntry.chooseImage(PillEntry.COLOUR_BLACK));
-                    } else if (selection.equals(getString(R.string.colour_blue))) {
-                        mColour = PillEntry.COLOUR_BLUE;
-                        mColour = PillEntry.COLOUR_BLUE;
-                        mColourImageView.setImageResource(
-                                PillEntry.chooseImage(PillEntry.COLOUR_BLUE));
-                    } else if (selection.equals(getString(R.string.colour_darkblue))) {
-                        mColour = PillEntry.COLOUR_DARKBLUE;
-                        mColour = PillEntry.COLOUR_DARKBLUE;
-                        mColourImageView.setImageResource(
-                                PillEntry.chooseImage(PillEntry.COLOUR_DARKBLUE));
-                    } else if (selection.equals(getString(R.string.colour_green))) {
-                        mColour = PillEntry.COLOUR_GREEN;
-                        mColour = PillEntry.COLOUR_GREEN;
-                        mColourImageView.setImageResource(
-                                PillEntry.chooseImage(PillEntry.COLOUR_GREEN));
-                    } else if (selection.equals(getString(R.string.colour_orange))) {
-                        mColour = PillEntry.COLOUR_ORANGE;
-                        mColour = PillEntry.COLOUR_ORANGE;
-                        mColourImageView.setImageResource(
-                                PillEntry.chooseImage(PillEntry.COLOUR_ORANGE));
-                    } else if (selection.equals(getString(R.string.colour_pink))) {
-                        mColour = PillEntry.COLOUR_PINK;
-                        mColour = PillEntry.COLOUR_PINK;
-                        mColourImageView.setImageResource(
-                                PillEntry.chooseImage(PillEntry.COLOUR_PINK));
-                    } else if (selection.equals(getString(R.string.colour_purple))) {
-                        mColour = PillEntry.COLOUR_PURPLE;
-                        mColour = PillEntry.COLOUR_PURPLE;
-                        mColourImageView.setImageResource(
-                                PillEntry.chooseImage(PillEntry.COLOUR_PURPLE));
-                    } else if (selection.equals(getString(R.string.colour_red))) {
-                        mColour = PillEntry.COLOUR_RED;
-                        mColour = PillEntry.COLOUR_RED;
-                        mColourImageView.setImageResource(
-                                PillEntry.chooseImage(PillEntry.COLOUR_RED));
-                    } else {
-                        mColour = PillEntry.COLOUR_YELLOW;
-                        mColour = PillEntry.COLOUR_YELLOW;
-                        mColourImageView.setImageResource(
-                                PillEntry.chooseImage(PillEntry.COLOUR_YELLOW));
+                                PillEntry.chooseImage(PillEntry.IMAGE_TABLET_BLUE));
                     }
+                    else if (selection.equals(getString(R.string.tablet_red))) {
+                        mColour = PillEntry.IMAGE_TABLET_RED;
+                        mColourImageView.setImageResource(
+                                PillEntry.chooseImage(PillEntry.IMAGE_TABLET_RED));
+                    }
+                    else if (selection.equals(getString(R.string.tablet_darkblue))) {
+                        mColour = PillEntry.IMAGE_TABLET_DARKBLUE;
+                        mColourImageView.setImageResource(
+                                PillEntry.chooseImage(PillEntry.IMAGE_TABLET_DARKBLUE));
+                    }
+                    else if (selection.equals(getString(R.string.tablet_green))) {
+                        mColour = PillEntry.IMAGE_TABLET_GREEN;
+                        mColourImageView.setImageResource(
+                                PillEntry.chooseImage(PillEntry.IMAGE_TABLET_GREEN));
+                    }
+                    else if (selection.equals(getString(R.string.tablet_orange))) {
+                        mColour = PillEntry.IMAGE_TABLET_ORANGE;
+                        mColourImageView.setImageResource(
+                                PillEntry.chooseImage(PillEntry.IMAGE_TABLET_ORANGE));
+                    }
+                    else if (selection.equals(getString(R.string.tablet_pink))) {
+                        mColour = PillEntry.IMAGE_TABLET_PINK;
+                        mColourImageView.setImageResource(
+                                PillEntry.chooseImage(PillEntry.IMAGE_TABLET_PINK));
+                    }
+                    else if (selection.equals(getString(R.string.tablet_yellow))) {
+                        mColour = PillEntry.IMAGE_TABLET_YELLOW;
+                        mColourImageView.setImageResource(
+                                PillEntry.chooseImage(PillEntry.IMAGE_TABLET_YELLOW));
+                    }
+                    else if (selection.equals(getString(R.string.capsule_blue))) {
+                        mColour = PillEntry.IMAGE_CAPSULE_BLUE;
+                        mColourImageView.setImageResource(
+                                PillEntry.chooseImage(PillEntry.IMAGE_CAPSULE_BLUE));
+                    }
+                    else if (selection.equals(getString(R.string.capsule_red))) {
+                        mColour = PillEntry.IMAGE_CAPSULE_RED;
+                        mColourImageView.setImageResource(
+                                PillEntry.chooseImage(PillEntry.IMAGE_CAPSULE_RED));
+                    }
+                    else if (selection.equals(getString(R.string.capsule_darkblue))) {
+                        mColour = PillEntry.IMAGE_CAPSULE_DARKBLUE;
+                        mColourImageView.setImageResource(
+                                PillEntry.chooseImage(PillEntry.IMAGE_CAPSULE_DARKBLUE));
+                    }
+                    else if (selection.equals(getString(R.string.capsule_green))) {
+                        mColour = PillEntry.IMAGE_CAPSULE_GREEN;
+                        mColourImageView.setImageResource(
+                                PillEntry.chooseImage(PillEntry.IMAGE_CAPSULE_GREEN));
+                    }
+                    else if (selection.equals(getString(R.string.capsule_orange))) {
+                        mColour = PillEntry.IMAGE_CAPSULE_ORANGE;
+                        mColourImageView.setImageResource(
+                                PillEntry.chooseImage(PillEntry.IMAGE_CAPSULE_ORANGE));
+                    }
+                    else if (selection.equals(getString(R.string.capsule_pink))) {
+                        mColour = PillEntry.IMAGE_CAPSULE_PINK;
+                        mColourImageView.setImageResource(
+                                PillEntry.chooseImage(PillEntry.IMAGE_CAPSULE_PINK));
+                    } else {
+                        mColour = PillEntry.IMAGE_CAPSULE_YELLOW;
+                        mColourImageView.setImageResource(
+                                PillEntry.chooseImage(PillEntry.IMAGE_CAPSULE_YELLOW));
+                    }
+
 
                 }
             }
@@ -181,8 +207,8 @@ public class EditorActivity extends AppCompatActivity
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-                mColour = PillEntry.COLOUR_BLACK;
-            } // Default black
+                mColour = PillEntry.IMAGE_TABLET_BLUE;
+            } // Default blue
         });
     }
 
@@ -325,8 +351,8 @@ public class EditorActivity extends AppCompatActivity
 
             // Correctly convert id of colours if user wants to edit a 'taken' pill or untaken pill
             int colour = cursor.getInt(colourColumnIndex);
-            if (colour > 100) {
-                colour -= 100;
+            if (colour > 1000) {
+                colour -= 1000;
             }
             Log.e("color_id in edit", String.valueOf(colour));
             int time = cursor.getInt(timeColumnIndex);
@@ -335,32 +361,47 @@ public class EditorActivity extends AppCompatActivity
             mNameEditText.setText(name);
 
             switch (colour) {
-                case PillEntry.COLOUR_BLACK:
+                case PillEntry.IMAGE_TABLET_BLUE:
                     mColourSpinner.setSelection(0);
                     break;
-                case PillEntry.COLOUR_BLUE:
+                case PillEntry.IMAGE_TABLET_RED:
                     mColourSpinner.setSelection(1);
                     break;
-                case PillEntry.COLOUR_DARKBLUE:
+                case PillEntry.IMAGE_TABLET_DARKBLUE:
                     mColourSpinner.setSelection(2);
                     break;
-                case PillEntry.COLOUR_GREEN:
+                case PillEntry.IMAGE_TABLET_GREEN:
                     mColourSpinner.setSelection(3);
                     break;
-                case PillEntry.COLOUR_ORANGE:
+                case PillEntry.IMAGE_TABLET_ORANGE:
                     mColourSpinner.setSelection(4);
                     break;
-                case PillEntry.COLOUR_PINK:
+                case PillEntry.IMAGE_TABLET_PINK:
                     mColourSpinner.setSelection(5);
                     break;
-                case PillEntry.COLOUR_PURPLE:
+                case PillEntry.IMAGE_TABLET_YELLOW:
                     mColourSpinner.setSelection(6);
                     break;
-                case PillEntry.COLOUR_RED:
+                case PillEntry.IMAGE_CAPSULE_BLUE:
                     mColourSpinner.setSelection(7);
                     break;
-                case PillEntry.COLOUR_YELLOW:
+                case PillEntry.IMAGE_CAPSULE_RED:
                     mColourSpinner.setSelection(8);
+                    break;
+                case PillEntry.IMAGE_CAPSULE_DARKBLUE:
+                    mColourSpinner.setSelection(9);
+                    break;
+                case PillEntry.IMAGE_CAPSULE_GREEN:
+                    mColourSpinner.setSelection(10);
+                    break;
+                case PillEntry.IMAGE_CAPSULE_ORANGE:
+                    mColourSpinner.setSelection(11);
+                    break;
+                case PillEntry.IMAGE_CAPSULE_PINK:
+                    mColourSpinner.setSelection(12);
+                    break;
+                case PillEntry.IMAGE_CAPSULE_YELLOW:
+                    mColourSpinner.setSelection(13);
                     break;
             }
 

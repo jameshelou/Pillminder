@@ -8,15 +8,22 @@
     <string name="save_menu_button">Save</string>
     <string name="delete_menu_button">Delete All</string>
 
-    <string name="colour_black">Black</string>
-    <string name="colour_blue">Blue</string>
-    <string name="colour_darkblue">Dark blue</string>
-    <string name="colour_green">Green</string>
-    <string name="colour_orange">Orange</string>
-    <string name="colour_pink">Pink</string>
-    <string name="colour_purple">Purple</string>
-    <string name="colour_red">Red</string>
-    <string name="colour_yellow">Yellow</string>
+    <string name="tablet_blue">Blue (Tablet)</string>
+    <string name="tablet_red">Red (Tablet)</string>
+    <string name="tablet_darkblue">Dark Blue (Tablet)</string>
+    <string name="tablet_green">Green (Tablet)</string>
+    <string name="tablet_orange">Orange (Tablet)</string>
+    <string name="tablet_pink">Pink (Tablet)</string>
+    <string name="tablet_yellow">Yellow (Tablet)</string>
+
+    <string name="capsule_blue">Blue (Capsule)</string>
+    <string name="capsule_red">Red (Capsule)</string>
+    <string name="capsule_darkblue">Dark blue (Capsule)</string>
+    <string name="capsule_green">Green (Capsule)</string>
+    <string name="capsule_orange">Orange (Capsule)</string>
+    <string name="capsule_pink">Pink (Capsule)</string>
+    <string name="capsule_yellow">Yellow (Capsule)</string>
+
 
     <string name="morning">Morning</string>
     <string name="afternoon">Afternoon</string>

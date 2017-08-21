@@ -66,11 +66,11 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
                 ContentValues newValues = new ContentValues();
                 if (taken == PillEntry.TAKEN_NO) {
                     newValues.put(PillEntry.COLUMN_TAKEN, PillEntry.TAKEN_YES);
-                    newValues.put(PillEntry.COLUMN_COLOUR, colourId + 100);
+                    newValues.put(PillEntry.COLUMN_COLOUR, colourId + 1000);
                     mContext.getContentResolver().update(uri, newValues, null, null);
                 } else {
                     newValues.put(PillEntry.COLUMN_TAKEN, PillEntry.TAKEN_NO);
-                    newValues.put(PillEntry.COLUMN_COLOUR, colourId - 100);
+                    newValues.put(PillEntry.COLUMN_COLOUR, colourId - 1000);
                     mContext.getContentResolver().update(uri, newValues, null, null);
                 }
                 checkCursor.close();

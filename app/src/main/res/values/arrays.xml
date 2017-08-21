@@ -2,15 +2,21 @@
 <resources>
     <!-- Colour spinner options -->
     <string-array name="colour_spinner_options">
-        <item>@string/colour_black</item>
-        <item>@string/colour_blue</item>
-        <item>@string/colour_darkblue</item>
-        <item>@string/colour_green</item>
-        <item>@string/colour_orange</item>
-        <item>@string/colour_pink</item>
-        <item>@string/colour_purple</item>
-        <item>@string/colour_red</item>
-        <item>@string/colour_yellow</item>
+        <item>@string/tablet_blue</item>
+        <item>@string/tablet_red</item>
+        <item>@string/tablet_darkblue</item>
+        <item>@string/tablet_green</item>
+        <item>@string/tablet_orange</item>
+        <item>@string/tablet_pink</item>
+        <item>@string/tablet_yellow</item>
+
+        <item>@string/capsule_blue</item>
+        <item>@string/capsule_red</item>
+        <item>@string/capsule_darkblue</item>
+        <item>@string/capsule_green</item>
+        <item>@string/capsule_orange</item>
+        <item>@string/capsule_pink</item>
+        <item>@string/capsule_yellow</item>
     </string-array>
 
     <!-- Time spinner options -->

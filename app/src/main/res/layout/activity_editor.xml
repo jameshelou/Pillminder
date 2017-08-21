@@ -10,7 +10,7 @@
         android:layout_width="216dp"
         android:layout_height="216dp"
         android:layout_gravity="center"
-        android:src="@drawable/pill_black" />
+        android:src="@drawable/capsule_blue" />
 
     <!-- Colour selector -->
     <LinearLayout
